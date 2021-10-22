@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'com.github.lophixyz'
+version '1.0-alpha'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    implementation 'com.github.lophixyz:registrationlibrary:1.05-alpha'
+    implementation 'joda-time:joda-time:2.10.11'
+}
+
+test {
+    useJUnitPlatform()
+}
